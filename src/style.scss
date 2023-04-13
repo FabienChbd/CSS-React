@@ -1,0 +1,70 @@
+$flex : flex;
+$font-stack: helvetica, "sans-serif";
+$margin: auto;
+$direction: column;
+$align: center;
+$width: 100vw;
+$primary-color : white;
+$second-color : rgb(122, 118, 118);
+$third-color : black;
+
+body {
+    background-color: $second-color;
+}
+
+h1 {
+    padding: 35px;
+}
+
+h2 {
+    color: $primary-color;
+}
+
+.app,
+.card {
+    display: $flex;
+    flex-direction: $direction;
+    align-items: $align;
+    font-family: $font-stack;
+    flex-wrap: wrap-reverse;
+    text-align: $align;
+}
+
+.app {
+    width: $width;
+}
+
+.card {
+    width: $width/3;
+    height: 400px;
+    color: $second-color;
+    border: solid $third-color;
+    background-color: $primary-color;
+    border-radius: 25px;
+
+}
+
+.title {
+    background-image: url("assets/Back.png");
+    background-size: cover;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.link {
+    color: $second-color;
+}
+
+
+.star {
+    float: right;
+    font-size: 25px;
+}
+
+.star:hover,
+.star:hover~.star {
+    color: orange;
+    cursor: pointer;
+}
